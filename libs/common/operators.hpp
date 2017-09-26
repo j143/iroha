@@ -39,7 +39,9 @@ namespace iroha {
    */
   template <typename T, typename Transform>
   auto operator|(T t, Transform f) -> decltype(f(*t)) {
-    if (t) return f(*t);
+    if (t) {
+      return f(*t);
+    }
     return {};
   }
 }

@@ -95,3 +95,8 @@ if(BENCHMARK)
   message(STATUS "google benchmark enabled")
   find_package(benchmark)
 endif()
+
+##########################
+#   mapbox variant       #
+##########################
+find_package(variant)
